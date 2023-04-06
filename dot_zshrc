@@ -1,5 +1,16 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/Users/brunoangst/.local/bin:$PATH
+export PATH=/Users/brunoangst/.asdf/installs/rust/1.68.2/bin/rustc:$PATH
+
+# sources
+source /usr/local/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source /usr/local/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source /usr/local/opt/zsh-git-prompt/zshrc.sh
+source /usr/local/share/zsh-autopair/autopair.zsh
+source /usr/local/share/zsh-you-should-use/you-should-use.plugin.zsh
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -70,7 +81,54 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  aliases
+  alias-finder
+  ansible
+  bgnotify
+  bundler
+  brew
+  catimg
+  command-not-found
+  copyfile
+  dircycle
+  docker
+  docker-compose
+  docker-machine
+  dotenv
+  emoji
+  extract
+  gh
+  git-prompt
+  # git-fast
+  gitignore
+  heroku
+  jsontools
+  jump
+  macos
+  node
+  npm
+  pip
+  pipenv
+  poetry
+  python
+  rails
+  ruby
+  singlechar
+  sprunge
+  #  sudo
+  thefuck
+  transfer
+  virtualenv
+  web-search
+  # zsh_reload
+  fzf
+  xcode
+  z
+  zsh-interactive-cd
+  asdf
+  git
+)
 
 source $ZSH/oh-my-zsh.sh
 
